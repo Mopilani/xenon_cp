@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:xenon_cp/views/np_apps/tree_view/projects_view.dart';
+
 
 bool donNotShowMeConnectionErrorDialog = false;
 
@@ -47,9 +49,16 @@ class _NPAppsState extends State<NPApps> {
     //   version: '0.0.4',
     //   navigatoTo: const CodeProjectsControle(),
     // ),
+    _AppItem(
+      icon: Icons.ac_unit_rounded,
+      title: 'Tree View',
+      tooltip: '',
+      version: '0.0.4',
+      navigatoTo: const TreeView(),
+    ),
     // _AppItem(
     //   icon: Icons.ac_unit_rounded,
-    //   title: 'Project Tree View',
+    //   title: 'Tree View',
     //   tooltip: '',
     //   version: '0.0.4',
     //   navigatoTo: const ProjectsView(),
