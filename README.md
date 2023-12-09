@@ -1,16 +1,13 @@
 # xenon_cp
 
-A new Flutter project.
+A flutter project built for windows to provide many tools we use every day.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Clone project and get dependencies, then:
 
-A few resources to get you started if this is your first Flutter project:
+- $ flutter pub get
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- $ flutter run windows
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Enjoy free and we are open for any contriputions in this project.
