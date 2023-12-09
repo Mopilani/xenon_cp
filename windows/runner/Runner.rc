@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "xenon_cp" "\0"
+            VALUE "CompanyName", "com.nexapros.xenon.cp" "\0"
+            VALUE "FileDescription", "Xenon Control Panel" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "xenon_cp" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
+            VALUE "InternalName", "Xenon Control Panel" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 com.nexapros.xenon.cp All rights reserved." "\0"
             VALUE "OriginalFilename", "xenon_cp.exe" "\0"
-            VALUE "ProductName", "xenon_cp" "\0"
+            VALUE "ProductName", "Xenon CP" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
