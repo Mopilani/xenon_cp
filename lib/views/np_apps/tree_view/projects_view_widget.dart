@@ -74,7 +74,7 @@ class ProjectsViewWidget extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                project.path!,
+                                project.path ?? '',
                                 style: const TextStyle(
                                   // fontSize: 20,
                                   fontWeight: FontWeight.bold,
