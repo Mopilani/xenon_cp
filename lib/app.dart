@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:updater/updater.dart' as updater;
 import 'package:xenon_cp/updaters.dart';
 import 'package:xenon_cp/views/home/home_page.dart';
+import 'package:xenon_cp/views/settings/theme.dart';
 
 class XenonCPApp extends StatelessWidget {
   const XenonCPApp({super.key});
@@ -11,12 +12,14 @@ class XenonCPApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Size size = MediaQuery.of(context).size;
-    return updater.UpdaterBloc(
-      updater: ThemeUpdater(
-        initialState: ThemeMode.dark,
-        updateForCurrentEvent: true,
-      ),
-      update: (context, state) {
+    return Obx(
+      // updater: ThemeUpdater(
+      //   initialState: ThemeMode.dark,
+      //   updateForCurrentEvent: true,
+      // ),
+      // update: (context, state) {
+      () {
+        if (themeChange.value == 0) false;
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Xenon-Base Controle Panel',
@@ -56,7 +59,7 @@ class XenonCPApp extends StatelessWidget {
               backgroundColor: Colors.purple,
             ),
           ),
-          themeMode: state.data ?? ThemeMode.dark,
+          themeMode: themeMode,
           home: const HomePage(),
         );
       },
