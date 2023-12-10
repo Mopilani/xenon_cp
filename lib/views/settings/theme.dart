@@ -1,6 +1,7 @@
 import 'package:businet_models/utils/global_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_acrylic/flutter_acrylic.dart';
+import 'package:get/get.dart';
 import 'package:xenon_cp/updaters.dart';
 
 class ThemeControle extends StatefulWidget {
@@ -84,8 +85,9 @@ class _ThemeControleState extends State<ThemeControle> {
                               currentTheme = 'light';
                               radioGroup = v!;
                               GlobalState.set('crntThm', 'light');
-                              ThemeUpdater().add(themeMode);
+                              // ThemeUpdater().add(themeMode);
                               setState(() {});
+                              themeChange.update((val) {});
                             },
                           ),
                         ],
@@ -104,8 +106,9 @@ class _ThemeControleState extends State<ThemeControle> {
                               currentTheme = 'dark';
                               radioGroup = v!;
                               GlobalState.set('crntThm', 'dark');
-                              ThemeUpdater().add(themeMode);
+                              // ThemeUpdater().add(themeMode);
                               setState(() {});
+                              themeChange.update((val) {});
                             },
                           ),
                         ],
@@ -153,6 +156,7 @@ class _ThemeControleState extends State<ThemeControle> {
 }
 
 ThemeMode themeMode = ThemeMode.dark;
+RxInt themeChange = 0.obs;
 
 class ButtonItem {
   ButtonItem({
