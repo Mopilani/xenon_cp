@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:xenon_cp/views/np_apps/teleprompter/teleprompter.dart';
 
 import 'package:xenon_cp/views/np_apps/tree_view/projects_view.dart';
 
@@ -172,12 +173,12 @@ class _NPAppsState extends State<NPApps> {
     //   tooltip: '',
     //   navigatoTo: const MopilaniCustomTools(),
     // ),
-    // _AppItem(
-    //   icon: Icons.work,
-    //   title: 'Teleprompter',  
-    //   tooltip: '',
-    //   navigatoTo: const MopilaniCustomTools(),
-    // ),
+    _AppItem(
+      icon: Icons.panorama_photosphere,
+      title: 'Teleprompter',  
+      tooltip: '',
+      navigatoTo: const TeleprompterView(),
+    ),
   ];
 
   @override
