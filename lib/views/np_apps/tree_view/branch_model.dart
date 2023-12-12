@@ -46,6 +46,7 @@ class Branch {
   static String collectionName = 'branches';
 
   static Branch fromMap(Map<String, dynamic> data) {
+    print('++++++++++++++++==${data['c']}');
     return Branch(
       data['id'],
       data['t'],
@@ -54,7 +55,7 @@ class Branch {
       yoffset: data['yo'],
       height: data['h'],
       width: data['w'],
-      color: data['c'],
+      color: int.parse(data['c'].toString()),
       textSize: data['ts'],
       // time: data['time'],
       // description: data['description'],
