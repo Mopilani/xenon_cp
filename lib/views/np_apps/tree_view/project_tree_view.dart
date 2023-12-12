@@ -255,7 +255,7 @@ class _ProjectTreeViewState extends State<ProjectTreeView> {
     //         ..remove('_id'));
     // });
     ready = false;
-    // await loadBranches();
+    await loadBranches();
   }
 
   Future<void> loadBranches() async {
