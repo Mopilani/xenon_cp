@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:xenon_cp/views/np_apps/data_view/json_viewer.dart';
 import 'package:xenon_cp/views/np_apps/teleprompter/teleprompter.dart';
 
 import 'package:xenon_cp/views/np_apps/tree_view/projects_view.dart';
@@ -178,6 +179,12 @@ class _NPAppsState extends State<NPApps> {
       title: 'Teleprompter',  
       tooltip: '',
       navigatoTo: const TeleprompterView(),
+    ),
+    _AppItem(
+      icon: Icons.panorama_photosphere,
+      title: 'Json View',  
+      tooltip: '',
+      navigatoTo: const JsonViewerPage(),
     ),
   ];
 
